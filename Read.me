@@ -1,7 +1,7 @@
 # Projeto 1
 
 ## Descrição:
-Este projeto contém um script em Python desenvolvido no módulo anterior.
+Este projeto contém um script desenvolvido nos módulos anteriores.
 
 ### Executando o arquivo .sh (Linux/Mac/WSL)
 O arquivo `script.sh` automatiza a execução. Siga os passos abaixo no terminal:
@@ -9,4 +9,37 @@ O arquivo `script.sh` automatiza a execução. Siga os passos abaixo no terminal
 1. Dê permissão de execução para o arquivo:
    #!/bin/bash
    chmod +x calculadora.sh
+
+2. Execute o arquivo:
    ./calculadora.sh
+
+
+--- Python
+
+### Resumo da calculadora em Python:
+
+O script `calculadora.py` foi desenvolvido para funcionar como uma calculadora no terminal. Abaixo está o detalhamento do funcionamento lógico:
+
+### 1. Estrutura de Repetição
+O código utiliza um `while True` para manter o programa rodando continuamente. Isso permite que o usuário realize várias contas seguidas sem precisar reiniciar o programa. O programa só é interrompido quando a opção "0" (Sair) é selecionada, acionando o comando `break`.
+
+### 2. Entrada de Dados
+O script solicita ao usuário:
+* A escolha da operação através de um menu numérico (1 a 5).
+* Dois números para realizar o cálculo (`num1` e `num2`).
+
+### 3. Processamento e Conversão
+Os números inseridos pelo usuário são capturados como texto (`string`) e imediatamente convertidos para números decimais (`float`), permitindo cálculos com números quebrados (ex: 2.5 + 3.1).
+
+### 4. Operações Suportadas
+O código utiliza uma estrutura condicional (`if-elif-else`) para determinar a operação matemática:
+* **Soma (+)**
+* **Subtração (-)**
+* **Multiplicação (*)**
+* **Divisão (/):** Inclui uma validação extra para impedir a divisão por zero, evitando erros no sistema.
+* **Potenciação (**):** Permite elevar um número a uma potência.
+
+### 5. Tratamento de Erros
+Se o usuário digitar uma opção que não existe no menu, o sistema exibe a mensagem "Opção inválida!" e reinicia o ciclo do menu.
+
+### Os outros códigos em Python são "Glossários" das aulas.
